@@ -1,0 +1,23 @@
+# Arquivos temporários do Godot
+.import/
+*.import
+*.gen
+
+# Arquivos de configuração do Godot
+export_presets.cfg
+export_presets.cfg.backup
+
+# Arquivos de configuração do editor
+.editor_settings-3.tres
+
+# Cache do Godot
+.cache/
+
+# Arquivos temporários do sistema operacional
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Pastas de compilação
+bin/
+obj/
