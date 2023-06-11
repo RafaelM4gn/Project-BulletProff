@@ -1,8 +1,8 @@
 extends Node2D
 
-var positions = [480, 560, 640, 720, 800]
+var positions = [-890, -445, 0, 445, 890]
 var current_position = 2
-var y = 635
+var y = 0
 var player_speed = 0.1
 
 onready var tween = $Tween

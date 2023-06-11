@@ -3,13 +3,11 @@
 [ext_resource path="res://scenes/Background.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=2]
 
-[node name="Node2D" type="Node2D"]
+[node name="MainScene" type="Node2D"]
 
 [node name="Background" parent="." instance=ExtResource( 1 )]
 position = Vector2( 639, 361 )
 
-[node name="Player2" parent="." instance=ExtResource( 2 )]
-position = Vector2( 638, 600 )
-scale = Vector2( 0.183307, 0.134862 )
-
-[node name="Tween" type="Tween" parent="Player2"]
+[node name="Player" parent="." instance=ExtResource( 2 )]
+position = Vector2( 640, 642 )
+scale = Vector2( 0.178845, 0.123664 )
