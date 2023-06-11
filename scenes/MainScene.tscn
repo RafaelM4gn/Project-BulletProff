@@ -1,13 +1,18 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://scenes/Background.tscn" type="PackedScene" id=1]
 [ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://scenes/EnemyEngine.tscn" type="PackedScene" id=3]
 
 [node name="MainScene" type="Node2D"]
 
 [node name="Background" parent="." instance=ExtResource( 1 )]
-position = Vector2( 639, 361 )
+position = Vector2( 641, 361 )
 
 [node name="Player" parent="." instance=ExtResource( 2 )]
 position = Vector2( 640, 642 )
 scale = Vector2( 0.178845, 0.123664 )
+
+[node name="Player" parent="Player" instance=ExtResource( 3 )]
+position = Vector2( 0.000244141, -4528.41 )
+scale = Vector2( 1, 1 )
