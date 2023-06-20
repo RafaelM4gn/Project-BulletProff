@@ -7,54 +7,67 @@
 extents = Vector2( 21.5, 28 )
 
 [sub_resource type="AtlasTexture" id=6]
+flags = 4
 atlas = ExtResource( 1 )
 region = Rect2( 128, 0, 32, 32 )
 
 [sub_resource type="AtlasTexture" id=7]
+flags = 4
 atlas = ExtResource( 1 )
 region = Rect2( 160, 0, 32, 32 )
 
 [sub_resource type="AtlasTexture" id=8]
+flags = 4
 atlas = ExtResource( 1 )
 region = Rect2( 192, 0, 32, 32 )
 
 [sub_resource type="AtlasTexture" id=9]
+flags = 4
 atlas = ExtResource( 1 )
 region = Rect2( 224, 0, 32, 32 )
 
 [sub_resource type="AtlasTexture" id=10]
+flags = 4
 atlas = ExtResource( 1 )
 region = Rect2( 256, 0, 32, 32 )
 
 [sub_resource type="AtlasTexture" id=11]
+flags = 4
 atlas = ExtResource( 1 )
 region = Rect2( 288, 0, 32, 32 )
 
 [sub_resource type="AtlasTexture" id=12]
+flags = 4
 atlas = ExtResource( 1 )
 region = Rect2( 288, 0, 32, 32 )
 
 [sub_resource type="AtlasTexture" id=13]
+flags = 4
 atlas = ExtResource( 1 )
 region = Rect2( 320, 0, 32, 32 )
 
 [sub_resource type="AtlasTexture" id=14]
+flags = 4
 atlas = ExtResource( 1 )
 region = Rect2( 352, 0, 32, 32 )
 
 [sub_resource type="AtlasTexture" id=15]
+flags = 4
 atlas = ExtResource( 1 )
 region = Rect2( 384, 0, 32, 32 )
 
 [sub_resource type="AtlasTexture" id=16]
+flags = 4
 atlas = ExtResource( 1 )
 region = Rect2( 416, 0, 32, 32 )
 
 [sub_resource type="AtlasTexture" id=1]
+flags = 4
 atlas = ExtResource( 1 )
 region = Rect2( 0, 0, 32, 32 )
 
 [sub_resource type="AtlasTexture" id=4]
+flags = 4
 atlas = ExtResource( 1 )
 region = Rect2( 320, 0, 32, 32 )
 
@@ -63,22 +76,22 @@ animations = [ {
 "frames": [ SubResource( 6 ), SubResource( 7 ), SubResource( 8 ), SubResource( 9 ), SubResource( 10 ), SubResource( 11 ) ],
 "loop": false,
 "name": "attack",
-"speed": 12.0
+"speed": 100.0
 }, {
 "frames": [ SubResource( 12 ), SubResource( 13 ), SubResource( 14 ), SubResource( 15 ), SubResource( 16 ) ],
 "loop": true,
 "name": "defense",
-"speed": 10.0
+"speed": 100.0
 }, {
 "frames": [ SubResource( 1 ) ],
 "loop": true,
 "name": "idle",
-"speed": 5.0
+"speed": 100.0
 }, {
 "frames": [ SubResource( 4 ) ],
 "loop": true,
 "name": "turn",
-"speed": 5.0
+"speed": 100.0
 } ]
 
 [node name="Player" type="KinematicBody2D"]
@@ -95,6 +108,7 @@ position = Vector2( 0, -0.5 )
 frames = SubResource( 2 )
 animation = "attack"
 frame = 3
+speed_scale = 100.0
 
 [node name="PlayerShootSpawn" type="Position2D" parent="."]
 position = Vector2( 0, -25 )

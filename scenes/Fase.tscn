@@ -17,6 +17,8 @@ texture = ExtResource( 2 )
 [node name="Player" parent="." instance=ExtResource( 1 )]
 position = Vector2( 502, 489 )
 
+[node name="Tween" type="Tween" parent="Player"]
+
 [node name="EnemyBullet" parent="." instance=ExtResource( 4 )]
 position = Vector2( 500, 63 )
 
