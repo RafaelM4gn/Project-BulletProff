@@ -1,8 +1,9 @@
 [gd_scene load_steps=4 format=2]
 
-[ext_resource path="res://scenes/Background.tscn" type="PackedScene" id=1]
-[ext_resource path="res://scenes/Player.tscn" type="PackedScene" id=2]
-[ext_resource path="res://scenes/EnemyEngine.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Scenes/Background.tscn" type="PackedScene" id=1]
+[ext_resource path="res://Scenes/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Scenes/EnemyEngine.tscn" type="PackedScene" id=3]
+
 
 [node name="MainScene" type="Node2D"]
 
